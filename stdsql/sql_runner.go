@@ -3,7 +3,7 @@ package stdsql
 import (
 	"database/sql"
 	"fmt"
-	"github.com/amortaza/bsn/logger"
+	"github.com/amortaza/bsn-flux-drivers/logger"
 	"time"
 
 	// need to have driver available otherwise sql.Open() fails

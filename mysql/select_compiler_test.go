@@ -2,10 +2,10 @@ package mysql
 
 import (
 	"fmt"
-	"github.com/amortaza/bsn/drivers/stdsql"
+	"github.com/amortaza/bsn-flux-drivers/stdsql"
 	"testing"
 
-	"github.com/amortaza/bsn/flux/node"
+	"github.com/amortaza/bsn-flux/node"
 )
 
 func TestWhenNoWhereClause_ExpectNoError(t *testing.T) {
@@ -18,7 +18,7 @@ func TestWhenNoWhereClause_ExpectNoError(t *testing.T) {
 }
 
 func TestWhenEqual_ExpectNoError(t *testing.T) {
-	equal := node.NewEqual(stdsql.NewNodeCompiler())
+	equal := node.NewEquals(stdsql.NewNodeCompiler())
 	equal.Left = node.NewColumn("name", stdsql.NewNodeCompiler())
 	equal.Right = node.NewString("ace", stdsql.NewNodeCompiler())
 
@@ -32,11 +32,11 @@ func TestWhenEqual_ExpectNoError(t *testing.T) {
 }
 
 func TestNodeWhenAnd_ExpectNoError(t *testing.T) {
-	name := node.NewEqual(stdsql.NewNodeCompiler())
+	name := node.NewEquals(stdsql.NewNodeCompiler())
 	name.Left = node.NewColumn("name", stdsql.NewNodeCompiler())
 	name.Right = node.NewString("ace", stdsql.NewNodeCompiler())
 
-	age := node.NewEqual(stdsql.NewNodeCompiler())
+	age := node.NewEquals(stdsql.NewNodeCompiler())
 	age.Left = node.NewColumn("age", stdsql.NewNodeCompiler())
 	age.Right = node.NewNumber(44, stdsql.NewNodeCompiler())
 
@@ -54,11 +54,11 @@ func TestNodeWhenAnd_ExpectNoError(t *testing.T) {
 }
 
 func TestNodeWhenAndOr_ExpectNoError(t *testing.T) {
-	name := node.NewEqual(stdsql.NewNodeCompiler())
+	name := node.NewEquals(stdsql.NewNodeCompiler())
 	name.Left = node.NewColumn("name", stdsql.NewNodeCompiler())
 	name.Right = node.NewString("ace", stdsql.NewNodeCompiler())
 
-	age := node.NewEqual(stdsql.NewNodeCompiler())
+	age := node.NewEquals(stdsql.NewNodeCompiler())
 	age.Left = node.NewColumn("age", stdsql.NewNodeCompiler())
 	age.Right = node.NewNumber(44, stdsql.NewNodeCompiler())
 

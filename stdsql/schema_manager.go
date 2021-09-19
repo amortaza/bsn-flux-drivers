@@ -1,8 +1,8 @@
 package stdsql
 
 import (
-	"github.com/amortaza/bsn/flux"
-	"github.com/amortaza/bsn/flux/relation"
+	"github.com/amortaza/bsn-flux"
+	"github.com/amortaza/bsn-flux/relation"
 )
 
 type schemaManager struct {

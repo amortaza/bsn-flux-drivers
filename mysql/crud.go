@@ -1,9 +1,9 @@
 package mysql
 
 import (
-	"github.com/amortaza/bsn/drivers/stdsql"
-	"github.com/amortaza/bsn/flux"
-	"github.com/amortaza/bsn/flux/node"
+	"github.com/amortaza/bsn-flux"
+	"github.com/amortaza/bsn-flux-drivers/stdsql"
+	"github.com/amortaza/bsn-flux/node"
 )
 
 type crud struct {

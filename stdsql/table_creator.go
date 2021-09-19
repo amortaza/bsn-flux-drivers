@@ -2,7 +2,7 @@ package stdsql
 
 import (
 	"fmt"
-	"github.com/amortaza/bsn/flux/normalization"
+	"github.com/amortaza/bsn-flux/normalization_config"
 )
 
 type TableCreator struct {
@@ -20,5 +20,5 @@ func (creator *TableCreator) Create(table string) error {
 }
 
 func (creator *TableCreator) generateSQLToCreateTable(table string) string {
-	return fmt.Sprintf("CREATE TABLE `%s` (`%s` CHAR(32) NOT NULL, PRIMARY KEY (`%s`));", table, normalization.PrimaryKeyFieldname, normalization.PrimaryKeyFieldname)
+	return fmt.Sprintf("CREATE TABLE `%s` (`%s` CHAR(32) NOT NULL, PRIMARY KEY (`%s`));", table, normalization_config.PrimaryKey_FieldName, normalization_config.PrimaryKey_FieldName)
 }

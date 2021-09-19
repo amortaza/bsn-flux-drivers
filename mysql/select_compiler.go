@@ -1,7 +1,7 @@
 package mysql
 
 import (
-	"github.com/amortaza/bsn/flux/node"
+	"github.com/amortaza/bsn-flux/node"
 )
 
 type selectCompiler struct {

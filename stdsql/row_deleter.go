@@ -2,7 +2,7 @@ package stdsql
 
 import (
 	"fmt"
-	"github.com/amortaza/bsn/flux/normalization"
+	"github.com/amortaza/bsn-flux/normalization_config"
 )
 
 type rowDeleter struct {
@@ -22,5 +22,5 @@ func (deleter *rowDeleter) Delete(table string, pk string) error {
 }
 
 func (deleter *rowDeleter) generateSQL(table string, pk string) string {
-	return fmt.Sprintf("DELETE FROM `%s` WHERE %s = '%s';", table, normalization.PrimaryKeyFieldname, pk)
+	return fmt.Sprintf("DELETE FROM `%s` WHERE %s = '%s';", table, normalization_config.PrimaryKey_FieldName, pk)
 }

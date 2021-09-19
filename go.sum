@@ -1,0 +1,7 @@
+github.com/amortaza/bsn-flux v0.0.0-20210918032337-2d2a8694e108 h1:8CfcBuWHCUqjoAqtMU/pvCRjytF0GCXG+/hNJio1wvo=
+github.com/amortaza/bsn-flux v0.0.0-20210918032337-2d2a8694e108/go.mod h1:Hu9ltcd0pegVRruZ7osNHyNEm88dfwXcKmOaTwlKbns=
+github.com/amortaza/bsn-flux v0.0.0-20210918051621-f3c332746be2 h1:JT4eyAuj+Ki6eArMBETf5g/aLrJ2ReigYF0Migl1CHU=
+github.com/amortaza/bsn-flux v0.0.0-20210918051621-f3c332746be2/go.mod h1:Gr2TmCShm/cj2oFe+s1/YlvnYJj2MLMeEaix7UyVSwQ=
+github.com/go-sql-driver/mysql v1.6.0 h1:BCTh4TKNUYmOmMUcQ3IipzF5prigylS7XXjEkfCHuOE=
+github.com/go-sql-driver/mysql v1.6.0/go.mod h1:DCzpHaOWr8IXmIStZouvnhqoel9Qv2LBy8hT2VhHyBg=
+github.com/google/uuid v1.3.0/go.mod h1:TIyPZe4MgqvfeYDBFedMoGGpEw/LqOeaOT+nhxU+yHo=

@@ -2,7 +2,7 @@ package stdsql
 
 import (
 	"fmt"
-	"github.com/amortaza/bsn/flux/relation"
+	"github.com/amortaza/bsn-flux/relation"
 )
 
 type fieldCreator struct {
@@ -24,7 +24,7 @@ func (creator *fieldCreator) Create(table string, field *relation.Field) error {
 	return creator.sqlRunner.Run(sql)
 }
 
-func (creator *fieldCreator) generateSQLToCreateField(table string, field *relation.Field) (string, error) {
+func (creator *fieldCreator) generateSQLToCreateField(table string, field * relation.Field) (string, error) {
 	sqlType, err := creator.fieldTypeToSQLType(field.Type)
 	if err != nil {
 		return "", err
